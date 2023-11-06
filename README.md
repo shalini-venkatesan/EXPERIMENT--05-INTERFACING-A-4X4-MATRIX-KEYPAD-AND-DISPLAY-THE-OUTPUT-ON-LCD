@@ -188,7 +188,6 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 bool col1, col2, col3, col4;
 
-
 void key()
 {
 	Lcd_PortType ports[] = {GPIOA,GPIOA,GPIOA,GPIOA};
@@ -234,7 +233,6 @@ void key()
     	}
     	HAL_Delay(500);
 
-
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
@@ -274,7 +272,6 @@ void key()
         }
         HAL_Delay(500);
 
-
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
@@ -313,6 +310,7 @@ void key()
            	col4 = 1;
         }
         HAL_Delay(500);
+
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
       	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
        	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
@@ -351,14 +349,8 @@ void key()
         		col4 = 1;
         	}
         	HAL_Delay(500);
-
-
 }
-
-
 ```
-
-
 ## Output screen shots of proteus  :
 
 ![Screenshot 2023-09-20 145515](https://github.com/shalini-venkatesan/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/118720291/7f30b399-d144-4a15-8922-fc5ed7138ab2)
